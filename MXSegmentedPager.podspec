@@ -46,7 +46,7 @@ Pod::Spec.new do |s|
   s.subspec 'MXParallaxHeader' do |ss|
     ss.source_files = 'Pods/MXParallaxHeader/MXParallaxHeader/*.{m,h}'
     ss.public_header_files = "Pods/MXParallaxHeader/MXParallaxHeader/*.h"
-    ss.frameworks = 'MXParallaxHeader'
+    # ss.frameworks = 'MXParallaxHeader'
   end
 
 end
