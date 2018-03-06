@@ -32,17 +32,14 @@ Pod::Spec.new do |s|
 
   s.subspec 'HMSegmentedControl' do |ss|
     ss.source_files = 'Pods/HMSegmentedControl/HMSegmentedControl/*.{m,h}'
-    ss.public_header_files = 'Pods/HMSegmentedControl/HMSegmentedControl/*.h'
   end
 
   s.subspec 'MXPagerView' do |ss|
     ss.source_files = 'Pods/MXPagerView/MXPagerView/*.{m,h}'
-    ss.public_header_files = 'Pods/MXPagerView/MXPagerView/*.h'
   end
 
   s.subspec 'MXParallaxHeader' do |ss|
     ss.source_files = 'Pods/MXParallaxHeader/MXParallaxHeader/*.{m,h}'
-    ss.public_header_files = 'Pods/MXParallaxHeader/MXParallaxHeader/*.h'
   end
 
 end
