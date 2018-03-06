@@ -26,23 +26,23 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.subspec 'MXSegmentedPager' do |ss|
-    s.source_files = 'MXSegmentedPager/*.{m,h}'
-    s.public_header_files = ["MXSegmentedPager/*.h"]
+    ss.source_files = 'MXSegmentedPager/*.{m,h}'
+    ss.public_header_files = "MXSegmentedPager/*.h"
   end
 
   s.subspec 'HMSegmentedControl' do |ss|
-    s.source_files = 'Pods/HMSegmentedControl/*.{m,h}'
-    s.public_header_files = ["Pods/HMSegmentedControl/*.h"]
+    ss.source_files = 'Pods/HMSegmentedControl/*.{m,h}'
+    ss.public_header_files = "Pods/HMSegmentedControl/*.h"
   end
 
   s.subspec 'MXPagerView' do |ss|
-    s.source_files = 'Pods/MXPagerView/*.{m,h}'
-    s.public_header_files = ["Pods/MXPagerView/*.h"]
+    ss.source_files = 'Pods/MXPagerView/*.{m,h}'
+    ss.public_header_files = ["Pods/MXPagerView/*.h"]
   end
 
   s.subspec 'MXParallaxHeader' do |ss|
-    s.source_files = 'Pods/MXParallaxHeader/*.{m,h}'
-    s.public_header_files = ["Pods/MXParallaxHeader/*.h"]
+    ss.source_files = 'Pods/MXParallaxHeader/*.{m,h}'
+    ss.public_header_files = "Pods/MXParallaxHeader/*.h"
   end
 
 end
