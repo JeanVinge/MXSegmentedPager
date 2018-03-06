@@ -21,7 +21,7 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
-#import "MXPagerViewController.h"
+#import "MXSegmentedPagerController.h"
 #import "MXSegmentedPager.h"
 
 NS_ASSUME_NONNULL_BEGIN

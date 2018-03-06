@@ -1,0 +1,32 @@
+PODS:
+  - HMSegmentedControl (1.5.4)
+  - MXPagerView (0.2.1)
+  - MXParallaxHeader (0.6.1)
+
+DEPENDENCIES:
+  - HMSegmentedControl (from `https://github.com/JeanVinge/HMSegmentedControl.git`)
+  - MXPagerView
+  - MXParallaxHeader (from `https://github.com/JeanVinge/MXParallaxHeader.git`)
+
+EXTERNAL SOURCES:
+  HMSegmentedControl:
+    :git: https://github.com/JeanVinge/HMSegmentedControl.git
+  MXParallaxHeader:
+    :git: https://github.com/JeanVinge/MXParallaxHeader.git
+
+CHECKOUT OPTIONS:
+  HMSegmentedControl:
+    :commit: 14b00846ffcb6f3d7894b85c9f950e4899572439
+    :git: https://github.com/JeanVinge/HMSegmentedControl.git
+  MXParallaxHeader:
+    :commit: 7dc3a6b0ec2c7b26fe7f778d270172fef5c5a6a6
+    :git: https://github.com/JeanVinge/MXParallaxHeader.git
+
+SPEC CHECKSUMS:
+  HMSegmentedControl: a457d2adb6f2beebf1bd8ff200524b809c358a46
+  MXPagerView: ede184b5191b2ed689ccf05a750a9978cce42414
+  MXParallaxHeader: ae4a9202250fa43dfb4ba990470edf0bfa0e1e76
+
+PODFILE CHECKSUM: d1995846bd8c014b6f8fda19f629a8dcd4db2602
+
+COCOAPODS: 1.4.0
