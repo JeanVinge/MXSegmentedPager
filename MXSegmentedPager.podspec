@@ -8,7 +8,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "MXSegmentedPager"
+  s.name             = "CatalystMXSegmentedPager"
   s.version          = "3.3.1"
   s.summary          = "Segmented pager view with Parallax header."
   s.description      = <<-DESC
@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MXSegmentedPager/*.{m,h}'
   s.public_header_files = ["MXSegmentedPager/*.h"]
-  s.dependency 'HMSegmentedControl', '1.5.4', :git => 'https://github.com/JeanVinge/HMSegmentedControl.git'
+  s.dependency 'CatalystHMSegmentedControl', '1.5.4'
   s.dependency 'MXPagerView', '0.2.1'
   s.dependency 'MXParallaxHeader', '0.6.1'
 
