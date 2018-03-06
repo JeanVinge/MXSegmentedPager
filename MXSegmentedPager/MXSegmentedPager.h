@@ -21,9 +21,10 @@
 // THE SOFTWARE.
 
 #import <UIKit/UIKit.h>
-#import <HMSegmentedControl/HMSegmentedControl.h>
-#import <MXPagerView/MXPagerView.h>
-#import <MXParallaxHeader/MXParallaxHeader.h>
+#import "HMSegmentedControl.h"
+#import "MXPagerView.h"
+#import "MXParallaxHeader.h"
+#import "MXScrollView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -221,6 +222,7 @@ typedef NS_ENUM(NSInteger, MXSegmentedControlPosition) {
  The segmented control. cf. [HMSegmentedControl](http://cocoadocs.org/docsets/HMSegmentedControl/1.5/) for customazation.
  */
 @property (nonatomic, readonly) HMSegmentedControl *segmentedControl;
+@property (nonatomic, readonly) MXScrollView *contentView;
 
 /**
  The segmented control position option.

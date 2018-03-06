@@ -44,6 +44,9 @@
         _segmentedPager.delegate    = self;
         _segmentedPager.dataSource  = self;
     }
+    
+    _segmentedPager.contentView.scrollsToTop = _segmentedPager.segmentedControl.width == 0 ? YES : NO;
+    
     return _segmentedPager;
 }
 

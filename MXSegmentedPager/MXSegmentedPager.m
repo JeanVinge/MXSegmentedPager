@@ -21,7 +21,6 @@
 // THE SOFTWARE.
 
 #import <objc/runtime.h>
-#import <MXParallaxHeader/MXScrollView.h>
 #import "MXSegmentedPager.h"
 
 @interface MXSegmentedPager () <MXScrollViewDelegate, MXPagerViewDelegate, MXPagerViewDataSource>
@@ -39,7 +38,8 @@
     
     //Gets number of pages
     _count = [self.dataSource numberOfPagesInSegmentedPager:self];
-    NSAssert(_count > 0, @"Number of pages in MXSegmentedPager must be greater than 0");
+    //    NSAssert(_count > 0, @"Number of pages in MXSegmentedPager must be greater than 0");
+    
     
     //Gets the segmented control height
     _controlHeight = 44.f;
@@ -54,17 +54,19 @@
     
     for (NSInteger index = 0; index < _count; index++) {
         
-        titles[index] = [NSString stringWithFormat:@"Page %ld", (long)index];
-        if ([self.dataSource respondsToSelector:@selector(segmentedPager:titleForSectionAtIndex:)]) {
-            titles[index] = [self.dataSource segmentedPager:self titleForSectionAtIndex:index];
-        }
-        
-        if ([self.dataSource respondsToSelector:@selector(segmentedPager:imageForSectionAtIndex:)]) {
-            images[index] = [self.dataSource segmentedPager:self imageForSectionAtIndex:index];
-        }
-        
-        if ([self.dataSource respondsToSelector:@selector(segmentedPager:selectedImageForSectionAtIndex:)]) {
-            selectedImages[index] = [self.dataSource segmentedPager:self selectedImageForSectionAtIndex:index];
+        if (_count != 0) {
+            titles[index] = [NSString stringWithFormat:@"Page %ld", (long)index];
+            if ([self.dataSource respondsToSelector:@selector(segmentedPager:titleForSectionAtIndex:)]) {
+                titles[index] = [self.dataSource segmentedPager:self titleForSectionAtIndex:index];
+            }
+            
+            if ([self.dataSource respondsToSelector:@selector(segmentedPager:imageForSectionAtIndex:)]) {
+                images[index] = [self.dataSource segmentedPager:self imageForSectionAtIndex:index];
+            }
+            
+            if ([self.dataSource respondsToSelector:@selector(segmentedPager:selectedImageForSectionAtIndex:)]) {
+                selectedImages[index] = [self.dataSource segmentedPager:self selectedImageForSectionAtIndex:index];
+            }
         }
     }
     
