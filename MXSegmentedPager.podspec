@@ -27,7 +27,6 @@ Pod::Spec.new do |s|
 
   s.subspec 'MXSegmentedPager' do |ss|
     ss.source_files = 'MXSegmentedPager/*.{m,h}'
-    ss.public_header_files = 'MXSegmentedPager/*.h'
   end
 
   s.subspec 'HMSegmentedControl' do |ss|
